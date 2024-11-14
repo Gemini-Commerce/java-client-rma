@@ -6,7 +6,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**notes**| [**List<RmaNoteResponse>**](RmaNoteResponse.md) |   | [optional]
+**notes**| [**List<RmaNoteResponse>**](RmaNoteResponse.md) |   | [optional] [default to new ArrayList<>()]
 **nextPageToken**| **String** |   | [optional]
 
 

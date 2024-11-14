@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **tenantId**| **String** |   |
 **pageSize**| **Long** |   | [optional]
 **pageToken**| **String** |   | [optional]
-**sorts**| [**List<RmaListReturnsRequestSort>**](RmaListReturnsRequestSort.md) |   | [optional]
+**sorts**| [**List<RmaListReturnsRequestSort>**](RmaListReturnsRequestSort.md) |   | [optional] [default to new ArrayList<>()]
 **filterMask**| **String** |   | [optional]
 **filter**| [**ListReturnsRequestFilter**](ListReturnsRequestFilter.md) |   | [optional]
 

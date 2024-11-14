@@ -6,7 +6,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**returns**| [**List<RmaReturnResponse>**](RmaReturnResponse.md) |   | [optional]
+**returns**| [**List<RmaReturnResponse>**](RmaReturnResponse.md) |   | [optional] [default to new ArrayList<>()]
 **nextPageToken**| **String** |   | [optional]
 
 

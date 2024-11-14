@@ -58,7 +58,8 @@ paths:
       - Rma
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /rma.Rma/ApproveReturn:
     post:
       operationId: ApproveReturn
@@ -107,7 +108,8 @@ paths:
       - Rma
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /rma.Rma/CancelReturn:
     post:
       operationId: CancelReturn
@@ -150,7 +152,8 @@ paths:
       - Rma
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /rma.Rma/ConfirmReturnApproveItems:
     post:
       operationId: ConfirmReturnApproveItems
@@ -193,7 +196,8 @@ paths:
       - Rma
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /rma.Rma/CreateReturn:
     post:
       operationId: CreateReturn
@@ -236,7 +240,8 @@ paths:
       - Rma
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /rma.Rma/DeleteNote:
     post:
       operationId: DeleteNote
@@ -279,7 +284,8 @@ paths:
       - Rma
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /rma.Rma/EditNote:
     post:
       operationId: EditNote
@@ -322,7 +328,8 @@ paths:
       - Rma
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /rma.Rma/GetReturn:
     post:
       operationId: GetReturn
@@ -365,7 +372,8 @@ paths:
       - Rma
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /rma.Rma/ListNotesByReturnId:
     post:
       operationId: ListNotesByReturnId
@@ -408,7 +416,8 @@ paths:
       - Rma
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /rma.Rma/ListReturns:
     post:
       operationId: ListReturns
@@ -451,7 +460,8 @@ paths:
       - Rma
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /rma.Rma/RefundReturn:
     post:
       operationId: RefundReturn
@@ -494,7 +504,8 @@ paths:
       - Rma
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /rma.Rma/RejectReturn:
     post:
       operationId: RejectReturn
@@ -537,7 +548,8 @@ paths:
       - Rma
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /rma.Rma/SetReceivedItems:
     post:
       operationId: SetReceivedItems
@@ -580,7 +592,8 @@ paths:
       - Rma
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /rma.Rma/SkipReturnStatus:
     post:
       operationId: SkipReturnStatus
@@ -623,7 +636,8 @@ paths:
       - Rma
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
 components:
   schemas:
     CreateReturnRequestProduct:
@@ -697,7 +711,7 @@ components:
       type: object
     OrderDataSubtotal:
       example:
-        code: null
+        code: UNKNOWN
         value:
           micros: 5
           units: units
@@ -724,7 +738,7 @@ components:
       type: string
     OrderDataTotal:
       example:
-        code: null
+        code: UNKNOWN
         value:
           micros: 5
           units: units
@@ -1237,7 +1251,7 @@ components:
         returns:
         - note: note
           grn: grn
-          preferredRefundMethod: null
+          preferredRefundMethod: REFUND_METHOD_UNKNOWN
           orderGrn: orderGrn
           refundPaymentCost: true
           customerInfo:
@@ -1308,16 +1322,16 @@ components:
             number: number
             subtotals:
               key:
-                code: null
+                code: UNKNOWN
                 value:
                   micros: 5
                   units: units
             grn: grn
             channel: channel
-            currency: null
+            currency: XXX
             totals:
               key:
-                code: null
+                code: UNKNOWN
                 value:
                   micros: 5
                   units: units
@@ -1403,7 +1417,7 @@ components:
           updatedAt: 2000-01-23T04:56:07.000+00:00
         - note: note
           grn: grn
-          preferredRefundMethod: null
+          preferredRefundMethod: REFUND_METHOD_UNKNOWN
           orderGrn: orderGrn
           refundPaymentCost: true
           customerInfo:
@@ -1474,16 +1488,16 @@ components:
             number: number
             subtotals:
               key:
-                code: null
+                code: UNKNOWN
                 value:
                   micros: 5
                   units: units
             grn: grn
             channel: channel
-            currency: null
+            currency: XXX
             totals:
               key:
-                code: null
+                code: UNKNOWN
                 value:
                   micros: 5
                   units: units
@@ -1632,16 +1646,16 @@ components:
         number: number
         subtotals:
           key:
-            code: null
+            code: UNKNOWN
             value:
               micros: 5
               units: units
         grn: grn
         channel: channel
-        currency: null
+        currency: XXX
         totals:
           key:
-            code: null
+            code: UNKNOWN
             value:
               micros: 5
               units: units
@@ -2098,7 +2112,7 @@ components:
       example:
         note: note
         grn: grn
-        preferredRefundMethod: null
+        preferredRefundMethod: REFUND_METHOD_UNKNOWN
         orderGrn: orderGrn
         refundPaymentCost: true
         customerInfo:
@@ -2169,16 +2183,16 @@ components:
           number: number
           subtotals:
             key:
-              code: null
+              code: UNKNOWN
               value:
                 micros: 5
                 units: units
           grn: grn
           channel: channel
-          currency: null
+          currency: XXX
           totals:
             key:
-              code: null
+              code: UNKNOWN
               value:
                 micros: 5
                 units: units

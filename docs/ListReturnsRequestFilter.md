@@ -6,15 +6,15 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**searchTerms**| **List<String>** |   | [optional]
-**returnIds**| **List<String>** |   | [optional]
-**returnStatus**| **List<String>** |   | [optional]
-**orderGrns**| **List<String>** |   | [optional]
-**orderNumbers**| **List<String>** |   | [optional]
-**orderItemGrns**| **List<String>** |   | [optional]
-**orderItemSkus**| **List<String>** |   | [optional]
-**customerGrns**| **List<String>** |   | [optional]
-**customerEmails**| **List<String>** |   | [optional]
+**searchTerms**| **List<String>** |   | [optional] [default to new ArrayList<>()]
+**returnIds**| **List<String>** |   | [optional] [default to new ArrayList<>()]
+**returnStatus**| **List<String>** |   | [optional] [default to new ArrayList<>()]
+**orderGrns**| **List<String>** |   | [optional] [default to new ArrayList<>()]
+**orderNumbers**| **List<String>** |   | [optional] [default to new ArrayList<>()]
+**orderItemGrns**| **List<String>** |   | [optional] [default to new ArrayList<>()]
+**orderItemSkus**| **List<String>** |   | [optional] [default to new ArrayList<>()]
+**customerGrns**| **List<String>** |   | [optional] [default to new ArrayList<>()]
+**customerEmails**| **List<String>** |   | [optional] [default to new ArrayList<>()]
 **createdAtStart**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional]
 **createdAtEnd**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional]
 

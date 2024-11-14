@@ -27,7 +27,7 @@ Name | Type | Description | Notes
 **productImg**| **String** |   | [optional]
 **productData**| **String** |   | [optional]
 **shipmentInfoReference**| **String** |   | [optional]
-**promotionGrn**| **List<String>** |   | [optional]
+**promotionGrn**| **List<String>** |   | [optional] [default to new ArrayList<>()]
 **productIsVirtual**| **Boolean** |   | [optional]
 
 

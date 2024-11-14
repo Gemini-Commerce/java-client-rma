@@ -29,11 +29,11 @@ Add a note to an RMA
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Rma.ApiClient;
-import GeminiCommerce_Rma.ApiException;
-import GeminiCommerce_Rma.Configuration;
-import GeminiCommerce_Rma.auth.*;
-import GeminiCommerce_Rma.models.*;
+import GeminiCommerce.Rma.ApiClient;
+import GeminiCommerce.Rma.ApiException;
+import GeminiCommerce.Rma.Configuration;
+import GeminiCommerce.Rma.auth.*;
+import GeminiCommerce.Rma.models.*;
 import org.openapitools.client.api.RmaApi;
 
 public class Example {
@@ -93,11 +93,11 @@ Approve a return
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Rma.ApiClient;
-import GeminiCommerce_Rma.ApiException;
-import GeminiCommerce_Rma.Configuration;
-import GeminiCommerce_Rma.auth.*;
-import GeminiCommerce_Rma.models.*;
+import GeminiCommerce.Rma.ApiClient;
+import GeminiCommerce.Rma.ApiException;
+import GeminiCommerce.Rma.Configuration;
+import GeminiCommerce.Rma.auth.*;
+import GeminiCommerce.Rma.models.*;
 import org.openapitools.client.api.RmaApi;
 
 public class Example {
@@ -158,11 +158,11 @@ Cancel a return
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Rma.ApiClient;
-import GeminiCommerce_Rma.ApiException;
-import GeminiCommerce_Rma.Configuration;
-import GeminiCommerce_Rma.auth.*;
-import GeminiCommerce_Rma.models.*;
+import GeminiCommerce.Rma.ApiClient;
+import GeminiCommerce.Rma.ApiException;
+import GeminiCommerce.Rma.Configuration;
+import GeminiCommerce.Rma.auth.*;
+import GeminiCommerce.Rma.models.*;
 import org.openapitools.client.api.RmaApi;
 
 public class Example {
@@ -222,11 +222,11 @@ Confirm return approve items
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Rma.ApiClient;
-import GeminiCommerce_Rma.ApiException;
-import GeminiCommerce_Rma.Configuration;
-import GeminiCommerce_Rma.auth.*;
-import GeminiCommerce_Rma.models.*;
+import GeminiCommerce.Rma.ApiClient;
+import GeminiCommerce.Rma.ApiException;
+import GeminiCommerce.Rma.Configuration;
+import GeminiCommerce.Rma.auth.*;
+import GeminiCommerce.Rma.models.*;
 import org.openapitools.client.api.RmaApi;
 
 public class Example {
@@ -286,11 +286,11 @@ Create a return
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Rma.ApiClient;
-import GeminiCommerce_Rma.ApiException;
-import GeminiCommerce_Rma.Configuration;
-import GeminiCommerce_Rma.auth.*;
-import GeminiCommerce_Rma.models.*;
+import GeminiCommerce.Rma.ApiClient;
+import GeminiCommerce.Rma.ApiException;
+import GeminiCommerce.Rma.Configuration;
+import GeminiCommerce.Rma.auth.*;
+import GeminiCommerce.Rma.models.*;
 import org.openapitools.client.api.RmaApi;
 
 public class Example {
@@ -350,11 +350,11 @@ Delete a note from an RMA
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Rma.ApiClient;
-import GeminiCommerce_Rma.ApiException;
-import GeminiCommerce_Rma.Configuration;
-import GeminiCommerce_Rma.auth.*;
-import GeminiCommerce_Rma.models.*;
+import GeminiCommerce.Rma.ApiClient;
+import GeminiCommerce.Rma.ApiException;
+import GeminiCommerce.Rma.Configuration;
+import GeminiCommerce.Rma.auth.*;
+import GeminiCommerce.Rma.models.*;
 import org.openapitools.client.api.RmaApi;
 
 public class Example {
@@ -414,11 +414,11 @@ Edit a note on an RMA
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Rma.ApiClient;
-import GeminiCommerce_Rma.ApiException;
-import GeminiCommerce_Rma.Configuration;
-import GeminiCommerce_Rma.auth.*;
-import GeminiCommerce_Rma.models.*;
+import GeminiCommerce.Rma.ApiClient;
+import GeminiCommerce.Rma.ApiException;
+import GeminiCommerce.Rma.Configuration;
+import GeminiCommerce.Rma.auth.*;
+import GeminiCommerce.Rma.models.*;
 import org.openapitools.client.api.RmaApi;
 
 public class Example {
@@ -478,11 +478,11 @@ Get a return
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Rma.ApiClient;
-import GeminiCommerce_Rma.ApiException;
-import GeminiCommerce_Rma.Configuration;
-import GeminiCommerce_Rma.auth.*;
-import GeminiCommerce_Rma.models.*;
+import GeminiCommerce.Rma.ApiClient;
+import GeminiCommerce.Rma.ApiException;
+import GeminiCommerce.Rma.Configuration;
+import GeminiCommerce.Rma.auth.*;
+import GeminiCommerce.Rma.models.*;
 import org.openapitools.client.api.RmaApi;
 
 public class Example {
@@ -542,11 +542,11 @@ List notes by return id
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Rma.ApiClient;
-import GeminiCommerce_Rma.ApiException;
-import GeminiCommerce_Rma.Configuration;
-import GeminiCommerce_Rma.auth.*;
-import GeminiCommerce_Rma.models.*;
+import GeminiCommerce.Rma.ApiClient;
+import GeminiCommerce.Rma.ApiException;
+import GeminiCommerce.Rma.Configuration;
+import GeminiCommerce.Rma.auth.*;
+import GeminiCommerce.Rma.models.*;
 import org.openapitools.client.api.RmaApi;
 
 public class Example {
@@ -606,11 +606,11 @@ List returns
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Rma.ApiClient;
-import GeminiCommerce_Rma.ApiException;
-import GeminiCommerce_Rma.Configuration;
-import GeminiCommerce_Rma.auth.*;
-import GeminiCommerce_Rma.models.*;
+import GeminiCommerce.Rma.ApiClient;
+import GeminiCommerce.Rma.ApiException;
+import GeminiCommerce.Rma.Configuration;
+import GeminiCommerce.Rma.auth.*;
+import GeminiCommerce.Rma.models.*;
 import org.openapitools.client.api.RmaApi;
 
 public class Example {
@@ -670,11 +670,11 @@ Refund a return
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Rma.ApiClient;
-import GeminiCommerce_Rma.ApiException;
-import GeminiCommerce_Rma.Configuration;
-import GeminiCommerce_Rma.auth.*;
-import GeminiCommerce_Rma.models.*;
+import GeminiCommerce.Rma.ApiClient;
+import GeminiCommerce.Rma.ApiException;
+import GeminiCommerce.Rma.Configuration;
+import GeminiCommerce.Rma.auth.*;
+import GeminiCommerce.Rma.models.*;
 import org.openapitools.client.api.RmaApi;
 
 public class Example {
@@ -734,11 +734,11 @@ Reject a return
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Rma.ApiClient;
-import GeminiCommerce_Rma.ApiException;
-import GeminiCommerce_Rma.Configuration;
-import GeminiCommerce_Rma.auth.*;
-import GeminiCommerce_Rma.models.*;
+import GeminiCommerce.Rma.ApiClient;
+import GeminiCommerce.Rma.ApiException;
+import GeminiCommerce.Rma.Configuration;
+import GeminiCommerce.Rma.auth.*;
+import GeminiCommerce.Rma.models.*;
 import org.openapitools.client.api.RmaApi;
 
 public class Example {
@@ -798,11 +798,11 @@ Set received items
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Rma.ApiClient;
-import GeminiCommerce_Rma.ApiException;
-import GeminiCommerce_Rma.Configuration;
-import GeminiCommerce_Rma.auth.*;
-import GeminiCommerce_Rma.models.*;
+import GeminiCommerce.Rma.ApiClient;
+import GeminiCommerce.Rma.ApiException;
+import GeminiCommerce.Rma.Configuration;
+import GeminiCommerce.Rma.auth.*;
+import GeminiCommerce.Rma.models.*;
 import org.openapitools.client.api.RmaApi;
 
 public class Example {
@@ -862,11 +862,11 @@ Skip a return status
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Rma.ApiClient;
-import GeminiCommerce_Rma.ApiException;
-import GeminiCommerce_Rma.Configuration;
-import GeminiCommerce_Rma.auth.*;
-import GeminiCommerce_Rma.models.*;
+import GeminiCommerce.Rma.ApiClient;
+import GeminiCommerce.Rma.ApiException;
+import GeminiCommerce.Rma.Configuration;
+import GeminiCommerce.Rma.auth.*;
+import GeminiCommerce.Rma.models.*;
 import org.openapitools.client.api.RmaApi;
 
 public class Example {

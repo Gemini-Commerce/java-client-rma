@@ -46,19 +46,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Rma.JSON;
+import GeminiCommerce.Rma.JSON;
 
 /**
  * RmaOrderData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T12:17:10.426764957Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T11:46:01.386097734Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class RmaOrderData {
   public static final String SERIALIZED_NAME_CREATED_AT = "createdAt";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
@@ -90,7 +89,7 @@ public class RmaOrderData {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<RmaOrderDataItem> items;
+  private List<RmaOrderDataItem> items = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
@@ -112,10 +111,10 @@ public class RmaOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get createdAt
    * @return createdAt
-  **/
+   */
   @javax.annotation.Nullable
   public OffsetDateTime getCreatedAt() {
     return createdAt;
@@ -131,10 +130,10 @@ public class RmaOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get updatedAt
    * @return updatedAt
-  **/
+   */
   @javax.annotation.Nullable
   public OffsetDateTime getUpdatedAt() {
     return updatedAt;
@@ -150,10 +149,10 @@ public class RmaOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get grn
    * @return grn
-  **/
+   */
   @javax.annotation.Nullable
   public String getGrn() {
     return grn;
@@ -169,10 +168,10 @@ public class RmaOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get number
    * @return number
-  **/
+   */
   @javax.annotation.Nullable
   public String getNumber() {
     return number;
@@ -188,10 +187,10 @@ public class RmaOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get status
    * @return status
-  **/
+   */
   @javax.annotation.Nullable
   public String getStatus() {
     return status;
@@ -207,10 +206,10 @@ public class RmaOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get channel
    * @return channel
-  **/
+   */
   @javax.annotation.Nullable
   public String getChannel() {
     return channel;
@@ -226,10 +225,10 @@ public class RmaOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get market
    * @return market
-  **/
+   */
   @javax.annotation.Nullable
   public String getMarket() {
     return market;
@@ -253,10 +252,10 @@ public class RmaOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get items
    * @return items
-  **/
+   */
   @javax.annotation.Nullable
   public List<RmaOrderDataItem> getItems() {
     return items;
@@ -272,10 +271,10 @@ public class RmaOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get currency
    * @return currency
-  **/
+   */
   @javax.annotation.Nullable
   public RmaCurrency getCurrency() {
     return currency;
@@ -299,10 +298,10 @@ public class RmaOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get subtotals
    * @return subtotals
-  **/
+   */
   @javax.annotation.Nullable
   public Map<String, OrderDataSubtotal> getSubtotals() {
     return subtotals;
@@ -326,10 +325,10 @@ public class RmaOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get totals
    * @return totals
-  **/
+   */
   @javax.annotation.Nullable
   public Map<String, OrderDataTotal> getTotals() {
     return totals;
@@ -339,6 +338,50 @@ public class RmaOrderData {
     this.totals = totals;
   }
 
+  /**
+   * A container for additional, undeclared properties.
+   * This is a holder for any undeclared properties as specified with
+   * the 'additionalProperties' keyword in the OAS document.
+   */
+  private Map<String, Object> additionalProperties;
+
+  /**
+   * Set the additional (undeclared) property with the specified name and value.
+   * If the property does not already exist, create it otherwise replace it.
+   *
+   * @param key name of the property
+   * @param value value of the property
+   * @return the RmaOrderData instance itself
+   */
+  public RmaOrderData putAdditionalProperty(String key, Object value) {
+    if (this.additionalProperties == null) {
+        this.additionalProperties = new HashMap<String, Object>();
+    }
+    this.additionalProperties.put(key, value);
+    return this;
+  }
+
+  /**
+   * Return the additional (undeclared) property.
+   *
+   * @return a map of objects
+   */
+  public Map<String, Object> getAdditionalProperties() {
+    return additionalProperties;
+  }
+
+  /**
+   * Return the additional (undeclared) property with the specified name.
+   *
+   * @param key name of the property
+   * @return an object
+   */
+  public Object getAdditionalProperty(String key) {
+    if (this.additionalProperties == null) {
+        return null;
+    }
+    return this.additionalProperties.get(key);
+  }
 
 
   @Override
@@ -360,12 +403,13 @@ public class RmaOrderData {
         Objects.equals(this.items, rmaOrderData.items) &&
         Objects.equals(this.currency, rmaOrderData.currency) &&
         Objects.equals(this.subtotals, rmaOrderData.subtotals) &&
-        Objects.equals(this.totals, rmaOrderData.totals);
+        Objects.equals(this.totals, rmaOrderData.totals)&&
+        Objects.equals(this.additionalProperties, rmaOrderData.additionalProperties);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(createdAt, updatedAt, grn, number, status, channel, market, items, currency, subtotals, totals);
+    return Objects.hash(createdAt, updatedAt, grn, number, status, channel, market, items, currency, subtotals, totals, additionalProperties);
   }
 
   @Override
@@ -383,6 +427,7 @@ public class RmaOrderData {
     sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
     sb.append("    subtotals: ").append(toIndentedString(subtotals)).append("\n");
     sb.append("    totals: ").append(toIndentedString(totals)).append("\n");
+    sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -421,24 +466,16 @@ public class RmaOrderData {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to RmaOrderData
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to RmaOrderData
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!RmaOrderData.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in RmaOrderData is not found in the empty JSON string", RmaOrderData.openapiRequiredFields.toString()));
-        }
-      }
-
-      Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
-      // check to see if the JSON string contains additional fields
-      for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!RmaOrderData.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `RmaOrderData` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -492,6 +529,28 @@ public class RmaOrderData {
            @Override
            public void write(JsonWriter out, RmaOrderData value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
+             obj.remove("additionalProperties");
+             // serialize additional properties
+             if (value.getAdditionalProperties() != null) {
+               for (Map.Entry<String, Object> entry : value.getAdditionalProperties().entrySet()) {
+                 if (entry.getValue() instanceof String)
+                   obj.addProperty(entry.getKey(), (String) entry.getValue());
+                 else if (entry.getValue() instanceof Number)
+                   obj.addProperty(entry.getKey(), (Number) entry.getValue());
+                 else if (entry.getValue() instanceof Boolean)
+                   obj.addProperty(entry.getKey(), (Boolean) entry.getValue());
+                 else if (entry.getValue() instanceof Character)
+                   obj.addProperty(entry.getKey(), (Character) entry.getValue());
+                 else {
+                   JsonElement jsonElement = gson.toJsonTree(entry.getValue());
+                   if (jsonElement.isJsonArray()) {
+                     obj.add(entry.getKey(), jsonElement.getAsJsonArray());
+                   } else {
+                     obj.add(entry.getKey(), jsonElement.getAsJsonObject());
+                   }
+                 }
+               }
+             }
              elementAdapter.write(out, obj);
            }
 
@@ -499,29 +558,50 @@ public class RmaOrderData {
            public RmaOrderData read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
-             return thisAdapter.fromJsonTree(jsonElement);
+             JsonObject jsonObj = jsonElement.getAsJsonObject();
+             // store additional fields in the deserialized instance
+             RmaOrderData instance = thisAdapter.fromJsonTree(jsonObj);
+             for (Map.Entry<String, JsonElement> entry : jsonObj.entrySet()) {
+               if (!openapiFields.contains(entry.getKey())) {
+                 if (entry.getValue().isJsonPrimitive()) { // primitive type
+                   if (entry.getValue().getAsJsonPrimitive().isString())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsString());
+                   else if (entry.getValue().getAsJsonPrimitive().isNumber())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsNumber());
+                   else if (entry.getValue().getAsJsonPrimitive().isBoolean())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsBoolean());
+                   else
+                     throw new IllegalArgumentException(String.format("The field `%s` has unknown primitive type. Value: %s", entry.getKey(), entry.getValue().toString()));
+                 } else if (entry.getValue().isJsonArray()) {
+                     instance.putAdditionalProperty(entry.getKey(), gson.fromJson(entry.getValue(), List.class));
+                 } else { // JSON object
+                     instance.putAdditionalProperty(entry.getKey(), gson.fromJson(entry.getValue(), HashMap.class));
+                 }
+               }
+             }
+             return instance;
            }
 
        }.nullSafe();
     }
   }
 
- /**
-  * Create an instance of RmaOrderData given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of RmaOrderData
-  * @throws IOException if the JSON string is invalid with respect to RmaOrderData
-  */
+  /**
+   * Create an instance of RmaOrderData given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of RmaOrderData
+   * @throws IOException if the JSON string is invalid with respect to RmaOrderData
+   */
   public static RmaOrderData fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, RmaOrderData.class);
   }
 
- /**
-  * Convert an instance of RmaOrderData to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of RmaOrderData to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

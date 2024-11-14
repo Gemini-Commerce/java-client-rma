@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **status**| **String** |   | [optional]
 **channel**| **String** |   | [optional]
 **market**| **String** |   | [optional]
-**items**| [**List<RmaOrderDataItem>**](RmaOrderDataItem.md) |   | [optional]
+**items**| [**List<RmaOrderDataItem>**](RmaOrderDataItem.md) |   | [optional] [default to new ArrayList<>()]
 **currency**| [**RmaCurrency**](RmaCurrency.md) |  for more information please, see Model/RmaCurrency.php  | [optional] [default to RmaCurrency.XXX]
 **subtotals**| [**Map<String, OrderDataSubtotal>**](OrderDataSubtotal.md) |   | [optional] [default to new HashMap<>()]
 **totals**| [**Map<String, OrderDataTotal>**](OrderDataTotal.md) |   | [optional] [default to new HashMap<>()]

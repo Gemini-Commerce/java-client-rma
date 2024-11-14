@@ -40,55 +40,54 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Rma.JSON;
+import GeminiCommerce.Rma.JSON;
 
 /**
  * ListReturnsRequestFilter
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T12:17:10.426764957Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T11:46:01.386097734Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class ListReturnsRequestFilter {
   public static final String SERIALIZED_NAME_SEARCH_TERMS = "searchTerms";
   @SerializedName(SERIALIZED_NAME_SEARCH_TERMS)
-  private List<String> searchTerms;
+  private List<String> searchTerms = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_RETURN_IDS = "returnIds";
   @SerializedName(SERIALIZED_NAME_RETURN_IDS)
-  private List<String> returnIds;
+  private List<String> returnIds = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_RETURN_STATUS = "returnStatus";
   @SerializedName(SERIALIZED_NAME_RETURN_STATUS)
-  private List<String> returnStatus;
+  private List<String> returnStatus = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ORDER_GRNS = "orderGrns";
   @SerializedName(SERIALIZED_NAME_ORDER_GRNS)
-  private List<String> orderGrns;
+  private List<String> orderGrns = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ORDER_NUMBERS = "orderNumbers";
   @SerializedName(SERIALIZED_NAME_ORDER_NUMBERS)
-  private List<String> orderNumbers;
+  private List<String> orderNumbers = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ORDER_ITEM_GRNS = "orderItemGrns";
   @SerializedName(SERIALIZED_NAME_ORDER_ITEM_GRNS)
-  private List<String> orderItemGrns;
+  private List<String> orderItemGrns = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ORDER_ITEM_SKUS = "orderItemSkus";
   @SerializedName(SERIALIZED_NAME_ORDER_ITEM_SKUS)
-  private List<String> orderItemSkus;
+  private List<String> orderItemSkus = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_CUSTOMER_GRNS = "customerGrns";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_GRNS)
-  private List<String> customerGrns;
+  private List<String> customerGrns = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_CUSTOMER_EMAILS = "customerEmails";
   @SerializedName(SERIALIZED_NAME_CUSTOMER_EMAILS)
-  private List<String> customerEmails;
+  private List<String> customerEmails = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_CREATED_AT_START = "createdAtStart";
   @SerializedName(SERIALIZED_NAME_CREATED_AT_START)
@@ -114,10 +113,10 @@ public class ListReturnsRequestFilter {
     return this;
   }
 
-   /**
+  /**
    * Get searchTerms
    * @return searchTerms
-  **/
+   */
   @javax.annotation.Nullable
   public List<String> getSearchTerms() {
     return searchTerms;
@@ -141,10 +140,10 @@ public class ListReturnsRequestFilter {
     return this;
   }
 
-   /**
+  /**
    * Get returnIds
    * @return returnIds
-  **/
+   */
   @javax.annotation.Nullable
   public List<String> getReturnIds() {
     return returnIds;
@@ -168,10 +167,10 @@ public class ListReturnsRequestFilter {
     return this;
   }
 
-   /**
+  /**
    * Get returnStatus
    * @return returnStatus
-  **/
+   */
   @javax.annotation.Nullable
   public List<String> getReturnStatus() {
     return returnStatus;
@@ -195,10 +194,10 @@ public class ListReturnsRequestFilter {
     return this;
   }
 
-   /**
+  /**
    * Get orderGrns
    * @return orderGrns
-  **/
+   */
   @javax.annotation.Nullable
   public List<String> getOrderGrns() {
     return orderGrns;
@@ -222,10 +221,10 @@ public class ListReturnsRequestFilter {
     return this;
   }
 
-   /**
+  /**
    * Get orderNumbers
    * @return orderNumbers
-  **/
+   */
   @javax.annotation.Nullable
   public List<String> getOrderNumbers() {
     return orderNumbers;
@@ -249,10 +248,10 @@ public class ListReturnsRequestFilter {
     return this;
   }
 
-   /**
+  /**
    * Get orderItemGrns
    * @return orderItemGrns
-  **/
+   */
   @javax.annotation.Nullable
   public List<String> getOrderItemGrns() {
     return orderItemGrns;
@@ -276,10 +275,10 @@ public class ListReturnsRequestFilter {
     return this;
   }
 
-   /**
+  /**
    * Get orderItemSkus
    * @return orderItemSkus
-  **/
+   */
   @javax.annotation.Nullable
   public List<String> getOrderItemSkus() {
     return orderItemSkus;
@@ -303,10 +302,10 @@ public class ListReturnsRequestFilter {
     return this;
   }
 
-   /**
+  /**
    * Get customerGrns
    * @return customerGrns
-  **/
+   */
   @javax.annotation.Nullable
   public List<String> getCustomerGrns() {
     return customerGrns;
@@ -330,10 +329,10 @@ public class ListReturnsRequestFilter {
     return this;
   }
 
-   /**
+  /**
    * Get customerEmails
    * @return customerEmails
-  **/
+   */
   @javax.annotation.Nullable
   public List<String> getCustomerEmails() {
     return customerEmails;
@@ -349,10 +348,10 @@ public class ListReturnsRequestFilter {
     return this;
   }
 
-   /**
+  /**
    * Get createdAtStart
    * @return createdAtStart
-  **/
+   */
   @javax.annotation.Nullable
   public OffsetDateTime getCreatedAtStart() {
     return createdAtStart;
@@ -368,10 +367,10 @@ public class ListReturnsRequestFilter {
     return this;
   }
 
-   /**
+  /**
    * Get createdAtEnd
    * @return createdAtEnd
-  **/
+   */
   @javax.annotation.Nullable
   public OffsetDateTime getCreatedAtEnd() {
     return createdAtEnd;
@@ -381,6 +380,50 @@ public class ListReturnsRequestFilter {
     this.createdAtEnd = createdAtEnd;
   }
 
+  /**
+   * A container for additional, undeclared properties.
+   * This is a holder for any undeclared properties as specified with
+   * the 'additionalProperties' keyword in the OAS document.
+   */
+  private Map<String, Object> additionalProperties;
+
+  /**
+   * Set the additional (undeclared) property with the specified name and value.
+   * If the property does not already exist, create it otherwise replace it.
+   *
+   * @param key name of the property
+   * @param value value of the property
+   * @return the ListReturnsRequestFilter instance itself
+   */
+  public ListReturnsRequestFilter putAdditionalProperty(String key, Object value) {
+    if (this.additionalProperties == null) {
+        this.additionalProperties = new HashMap<String, Object>();
+    }
+    this.additionalProperties.put(key, value);
+    return this;
+  }
+
+  /**
+   * Return the additional (undeclared) property.
+   *
+   * @return a map of objects
+   */
+  public Map<String, Object> getAdditionalProperties() {
+    return additionalProperties;
+  }
+
+  /**
+   * Return the additional (undeclared) property with the specified name.
+   *
+   * @param key name of the property
+   * @return an object
+   */
+  public Object getAdditionalProperty(String key) {
+    if (this.additionalProperties == null) {
+        return null;
+    }
+    return this.additionalProperties.get(key);
+  }
 
 
   @Override
@@ -402,12 +445,13 @@ public class ListReturnsRequestFilter {
         Objects.equals(this.customerGrns, listReturnsRequestFilter.customerGrns) &&
         Objects.equals(this.customerEmails, listReturnsRequestFilter.customerEmails) &&
         Objects.equals(this.createdAtStart, listReturnsRequestFilter.createdAtStart) &&
-        Objects.equals(this.createdAtEnd, listReturnsRequestFilter.createdAtEnd);
+        Objects.equals(this.createdAtEnd, listReturnsRequestFilter.createdAtEnd)&&
+        Objects.equals(this.additionalProperties, listReturnsRequestFilter.additionalProperties);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(searchTerms, returnIds, returnStatus, orderGrns, orderNumbers, orderItemGrns, orderItemSkus, customerGrns, customerEmails, createdAtStart, createdAtEnd);
+    return Objects.hash(searchTerms, returnIds, returnStatus, orderGrns, orderNumbers, orderItemGrns, orderItemSkus, customerGrns, customerEmails, createdAtStart, createdAtEnd, additionalProperties);
   }
 
   @Override
@@ -425,6 +469,7 @@ public class ListReturnsRequestFilter {
     sb.append("    customerEmails: ").append(toIndentedString(customerEmails)).append("\n");
     sb.append("    createdAtStart: ").append(toIndentedString(createdAtStart)).append("\n");
     sb.append("    createdAtEnd: ").append(toIndentedString(createdAtEnd)).append("\n");
+    sb.append("    additionalProperties: ").append(toIndentedString(additionalProperties)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -463,24 +508,16 @@ public class ListReturnsRequestFilter {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to ListReturnsRequestFilter
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to ListReturnsRequestFilter
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ListReturnsRequestFilter.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
           throw new IllegalArgumentException(String.format("The required field(s) %s in ListReturnsRequestFilter is not found in the empty JSON string", ListReturnsRequestFilter.openapiRequiredFields.toString()));
-        }
-      }
-
-      Set<Map.Entry<String, JsonElement>> entries = jsonElement.getAsJsonObject().entrySet();
-      // check to see if the JSON string contains additional fields
-      for (Map.Entry<String, JsonElement> entry : entries) {
-        if (!ListReturnsRequestFilter.openapiFields.contains(entry.getKey())) {
-          throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `ListReturnsRequestFilter` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
@@ -537,6 +574,28 @@ public class ListReturnsRequestFilter {
            @Override
            public void write(JsonWriter out, ListReturnsRequestFilter value) throws IOException {
              JsonObject obj = thisAdapter.toJsonTree(value).getAsJsonObject();
+             obj.remove("additionalProperties");
+             // serialize additional properties
+             if (value.getAdditionalProperties() != null) {
+               for (Map.Entry<String, Object> entry : value.getAdditionalProperties().entrySet()) {
+                 if (entry.getValue() instanceof String)
+                   obj.addProperty(entry.getKey(), (String) entry.getValue());
+                 else if (entry.getValue() instanceof Number)
+                   obj.addProperty(entry.getKey(), (Number) entry.getValue());
+                 else if (entry.getValue() instanceof Boolean)
+                   obj.addProperty(entry.getKey(), (Boolean) entry.getValue());
+                 else if (entry.getValue() instanceof Character)
+                   obj.addProperty(entry.getKey(), (Character) entry.getValue());
+                 else {
+                   JsonElement jsonElement = gson.toJsonTree(entry.getValue());
+                   if (jsonElement.isJsonArray()) {
+                     obj.add(entry.getKey(), jsonElement.getAsJsonArray());
+                   } else {
+                     obj.add(entry.getKey(), jsonElement.getAsJsonObject());
+                   }
+                 }
+               }
+             }
              elementAdapter.write(out, obj);
            }
 
@@ -544,29 +603,50 @@ public class ListReturnsRequestFilter {
            public ListReturnsRequestFilter read(JsonReader in) throws IOException {
              JsonElement jsonElement = elementAdapter.read(in);
              validateJsonElement(jsonElement);
-             return thisAdapter.fromJsonTree(jsonElement);
+             JsonObject jsonObj = jsonElement.getAsJsonObject();
+             // store additional fields in the deserialized instance
+             ListReturnsRequestFilter instance = thisAdapter.fromJsonTree(jsonObj);
+             for (Map.Entry<String, JsonElement> entry : jsonObj.entrySet()) {
+               if (!openapiFields.contains(entry.getKey())) {
+                 if (entry.getValue().isJsonPrimitive()) { // primitive type
+                   if (entry.getValue().getAsJsonPrimitive().isString())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsString());
+                   else if (entry.getValue().getAsJsonPrimitive().isNumber())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsNumber());
+                   else if (entry.getValue().getAsJsonPrimitive().isBoolean())
+                     instance.putAdditionalProperty(entry.getKey(), entry.getValue().getAsBoolean());
+                   else
+                     throw new IllegalArgumentException(String.format("The field `%s` has unknown primitive type. Value: %s", entry.getKey(), entry.getValue().toString()));
+                 } else if (entry.getValue().isJsonArray()) {
+                     instance.putAdditionalProperty(entry.getKey(), gson.fromJson(entry.getValue(), List.class));
+                 } else { // JSON object
+                     instance.putAdditionalProperty(entry.getKey(), gson.fromJson(entry.getValue(), HashMap.class));
+                 }
+               }
+             }
+             return instance;
            }
 
        }.nullSafe();
     }
   }
 
- /**
-  * Create an instance of ListReturnsRequestFilter given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of ListReturnsRequestFilter
-  * @throws IOException if the JSON string is invalid with respect to ListReturnsRequestFilter
-  */
+  /**
+   * Create an instance of ListReturnsRequestFilter given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of ListReturnsRequestFilter
+   * @throws IOException if the JSON string is invalid with respect to ListReturnsRequestFilter
+   */
   public static ListReturnsRequestFilter fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, ListReturnsRequestFilter.class);
   }
 
- /**
-  * Convert an instance of ListReturnsRequestFilter to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of ListReturnsRequestFilter to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }
