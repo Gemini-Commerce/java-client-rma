@@ -49,7 +49,7 @@ import GeminiCommerce.Rma.JSON;
 /**
  * RmaReturnProduct
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-15T15:24:42.338735973Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-15T16:29:20.741881326Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class RmaReturnProduct {
   public static final String SERIALIZED_NAME_GRN = "grn";
   @SerializedName(SERIALIZED_NAME_GRN)
