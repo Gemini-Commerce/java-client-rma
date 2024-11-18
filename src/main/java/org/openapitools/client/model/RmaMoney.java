@@ -48,7 +48,7 @@ import GeminiCommerce.Rma.JSON;
 /**
  * RmaMoney
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-15T16:29:20.741881326Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-18T16:38:09.864475796Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class RmaMoney {
   public static final String SERIALIZED_NAME_UNITS = "units";
   @SerializedName(SERIALIZED_NAME_UNITS)
